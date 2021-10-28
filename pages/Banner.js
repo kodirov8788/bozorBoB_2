@@ -1,29 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-
+import Image from "next/image";
 function Banner() {
   const BANNER_DATA = [
     {
       id: 0,
-      imageURL: "https://cdn.mos.cms.futurecdn.net/zDVBgqfuesBrQDkptZPzw5.png",
+      imageURL: "/essets/1.jpg",
       imageDesc: "Shop and Toys",
     },
     {
       id: 1,
-      imageURL:
-        "https://www.ixbt.com/img/n1/news/2021/9/4/acBook-Pro-M1X_large.jpg",
-      imageDesc: "Shop and Toys",
+      imageURL: "/essets/2.jpg",
+      imageDesc: "savdo",
     },
     {
       id: 2,
-      imageURL:
-        "https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg",
-      imageDesc: "Shop and Toys",
-    },
-    {
-      id: 3,
-      imageURL: "https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg",
-      imageDesc: "Shop and Toys",
+      imageURL: "/essets/3.jpg",
+      imageDesc: "technology",
     },
   ];
 
@@ -63,7 +56,13 @@ function Banner() {
       >
         {BANNER_DATA.map((img, ind) => (
           <div key={ind} className="banner__imageContainerItem">
-            <img className="banner__image" src={img.imageURL} alt="" />
+            <Image
+              className="banner__image"
+              src={img.imageURL}
+              alt={img.imageDesc}
+              width={1400}
+              height={600}
+            />
           </div>
         ))}
       </div>

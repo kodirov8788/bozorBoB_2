@@ -7,7 +7,7 @@
 }
 .banner__imageContainer {
   width: 400%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   transition: 0.5s;
 }
@@ -15,24 +15,25 @@
   width: 100%;
   height: 100%;
 }
-.banner__image1 {
+/* .banner__image1 {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  /* user-select: none;
-  pointer-events: none; */
-  /* mask-image: linear-gradient(
+  object-fit: contain;
+  object-position: center bottom;
+  user-select: none;
+  pointer-events: none;
+  mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 40%,
     rgba(0, 0, 0, 0)
-  ); */
-}
+  );
+} */
 .banner__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
+
   /* user-select: none; */
   pointer-events: none;
   animation: image 4s infinite forwards;

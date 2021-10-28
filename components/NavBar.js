@@ -180,10 +180,7 @@ function NavBar() {
       <div className="nav__menu">
         <div className="navbar__cart">
           <Link href="/cart">
-            <a
-              className={"nav-link" + isActive("/cart")}
-              className="navbar__cartLink"
-            >
+            <a className={"nav-link" + isActive("/cart")}>
               <BsCartPlus />
               <b>{cart.length}</b>
             </a>
