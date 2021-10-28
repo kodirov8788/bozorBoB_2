@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    BASE_URL: "http://localhost:3000",
+    BASE_URL: "https://bozor-bob-original.vercel.app/",
     MONGODB_URL:
       "mongodb+srv://next123:next123@cluster0.wn8mt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     ACCESS_TOKEN_SECRET: "JG]d3~J7@.cmNdSkh=b~2$=ZwqbU8r4dsF+[K$T5uVaMPDn*<q",
